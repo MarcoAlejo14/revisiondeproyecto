@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /*border: 1px solid red;*/
+}
+
+body {
+    background-color: #bdb8ad;
+}
+
+#contenedor {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 0px auto;
+}
+
+P {
+    text-align: center;
+    width: 300px;
+    height: 100px;
+}
+
+header {
+    width: 100%;
+    background-color: #35978f;
+}
+
+header h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img.banner,
+img.RICOH {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+img.canonlogo{
+ width: 100%;
+ height:200px;
+}
+/*_____________________________________________________________________________________*/
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #35978f;
+}
+
+nav ul {
+    list-style: none;
+    /*Elimina los puntos de la lista*/
+    display: flex;
+    /*Hace que los ítems se muestren en linea*/
+    justify-content: space-around;
+    /*Distribuye los ítems de manera uniforme*/
+    padding: 5px;
+}
+
+nav li {
+    margin: 0%;
+    /*Elimina margen predeterminado de los ítems*/
+}
+
+nav a {
+    text-decoration: none;
+    /*Elimina la decoración de los enlaces*/
+    display: inline-block;
+    /*Mantiene a los elementos a dentro del bloque nav*/
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    width: 100%;
+    /*El bloa de la etiqueta <a> ocupe el 100% del ancho, esto logra que el efecto hover de cambiar el backgound sea completo*/
+}
+
+nav a:hover {
+    background-color: #11ff80;
+    color: black;
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+    /* Muestra el submenú al hacer hover sobre el ítem principal*/
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    /*Al hacer hover en el menú principal despliega verticalmente el submenú sin afectar el bloque nav*/
+    background-color: #35978f;
+}
+
+.submenu a {
+    font-size: 13.5px;
+    /*Para igualar ancho de submenu*/
+}
+
+.nav20 {
+    width: 20%;
+}
+
+.nav50 {
+    width: 60%;
+}
+
+/*_____________________________________________________________________________________*/
+
+#izquierda {
+    width: 15%;
+    background-color: #e0d9cf;
+}
+
+#izquierda h3 {
+    margin: 10px;
+    color: #000000;
+}
+
+#izquierda a {
+    display: block;
+    margin: 5px 0 0 20px;
+    text-decoration: none;
+    background-color: #dae0e0;
+    color: rgb(1, 1, 1);
+
+}
+
+#izquierda a:hover {
+    color: #35978f;
+}
+
+#izquierda ul{
+    list-style: none;
+    width: 90%;
+    margin: 5px 0 0 20px;
+}
+
+#izquierda li:hover{
+    color: #35978f;
+}
+
+
+/*_____________________________________________________________________________________*/
+
+section {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    /* box-shadow: 0 0 30px rgb(27, 228, 208); */
+}
+
+section figure {
+    border: 1px solid #bdb8ad;
+    margin: 30px;
+    padding: 20px;
+}
+
+
+
+section figure figcaption {
+    text-align: center;
+    color: #44749d;
+}
+
+/*_____________________________________________________________________________________*/
+#derecha {
+    width: 25%;
+    background-color: #bcdfdb;
+    /* box-shadow: 0 0 30px rgb(27, 228, 208); */
+}
+
+#derecha a {
+    display: block;
+    margin: 30px auto;
+    border: 1px solid #bdb8ad;
+    width: 85%;
+}
+
+#derecha a img {
+    width: 100%;
+    vertical-align: bottom;
+    /*Elimina espacio inferior*/
+    /* box-shadow: 0 0 30px rgb(27, 228, 208); */
+}
+
+#derecha audio {
+    margin: 50px auto;
+    width: 85%;
+    display: block;
+    /* box-shadow: 0 0 30px rgb(27, 228, 208); */
+
+}
+
+#derecha video {
+
+    margin: 50px auto;
+    width: 85%;
+    display: block;
+    /* box-shadow: 0 0 30px rgb(27, 228, 208); */
+
+    width: 200px;
+    height: 400px;
+}
+
+
+
+/*_____________________________________________________________________________________*/
+
+footer {
+    width: 100%;
+    background-color: #27aba0;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer33 {
+    width: 33.33%;
+}
+
+.footer33 ul {
+    font-size: small;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+footer div a {
+    display: inline-block;
+    float: right;
+    margin: 6px 5px;
+}
+
+footer img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+footer p {
+    color: rgb(0, 0, 0);
+    margin-top: 7px;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+}
+
+
+.contenedor-productos-relacionados{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+/* .contenedor-productos-relacionados h2{
+    font-size: 60px;
+    margin-bottom: 50px;
+} */
+
+.card-lista-productos{
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    gap: 50px;
+    
+}
+
+.card.img{
+    background: transparent;
+    margin-bottom: 15px;
+    
+}
+.card-img img{
+    height: 150px;
+    width: 50%;
+    box-shadow: 0 0  5px rgb(0, 0, 0, 0.5);
+    margin-top: 50px;
+}
+ /* .card{
+    box-shadow: 0 0  30px rgb(27, 228, 208);
+}  */
+
+
+
+.descripcion-card{
+    text-align: center;
+    list-style-type: none
+}
+
+.contenedor-add-cart{
+
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.contenedor-numero{
+    position: relative;
+}
+
+.input-numero{
+    background-color: #9090c5;
+    border: none;
+    padding: 10px;
+    width: 60px;
+    height: 100%;
+    font-weight: 500;
+}
+
+.btn-add-to-cart{
+    border: none;
+    background-color: #252525;
+    padding: 10px;
+    color: #f7f7f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-add-to-cart:hover{
+color: green;
+}
